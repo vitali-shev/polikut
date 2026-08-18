@@ -1,0 +1,41 @@
+firebase:
+  base-url: https://firebasestorage.googleapis.com
+  bucket-name: polikut-storage.firebasestorage.app
+
+telegram:
+  bot:
+    token: ${TELEGRAM_BOT_TOKEN}
+    chat-id: ${TELEGRAM_CHAT_ID}
+
+nova-poshta:
+  base-url: https://api.novaposhta.ua/v2.0/json/
+  api-key: ${NOVA_POSHTA_API_KEY}
+
+spring:
+  application:
+    name: polikut
+
+  security:
+    user:
+      name: ${ADMIN_USERNAME}
+      password: "{noop}${ADMIN_PASSWORD}"
+      roles: ADMIN
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 50MB
+
+  cloud:
+    gcp:
+      credentials:
+        location: ${FIREBASE_CREDENTIALS_PATH}
+
+  datasource:
+    url: ${DATASOURCE_URL}
+    username: ${DATASOURCE_USERNAME}
+    password: ${DATASOURCE_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: ${JPA_DDL_AUTO}

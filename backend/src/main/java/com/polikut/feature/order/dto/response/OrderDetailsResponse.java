@@ -5,7 +5,7 @@ import com.polikut.feature.order.enums.OrderStatus;
 import com.polikut.feature.order.enums.PaymentMethod;
 import com.polikut.feature.order.enums.PaymentStatus;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.List;
 
 public record OrderDetailsResponse(
@@ -23,7 +23,7 @@ public record OrderDetailsResponse(
         PaymentMethod paymentMethod,
         PaymentStatus paymentStatus,
         String trackingNumber,
-        LocalDateTime createdAt,
+        Instant createdAt,
         int totalPrice,
         List<OrderItemResponse> items) {
 }

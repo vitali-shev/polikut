@@ -17,7 +17,7 @@ spring:
 
   security:
     user:
-      name: ${ADMIN_USERNAME}
+      name: admin
       password: "{noop}${ADMIN_PASSWORD}"
       roles: ADMIN
 
@@ -32,9 +32,9 @@ spring:
         location: ${FIREBASE_CREDENTIALS_PATH}
 
   datasource:
-    url: ${DATASOURCE_URL}
-    username: ${DATASOURCE_USERNAME}
-    password: ${DATASOURCE_PASSWORD}
+    url: ${POSTGRES_URL}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
 
   jpa:
     hibernate:

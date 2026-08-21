@@ -1,0 +1,34 @@
+services:
+  frontend: 
+    restart: unless-stopped
+    build: ./frontend
+    image: polikut-frontend
+    container_name: frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+  backend:
+    restart: unless-stopped
+    build: ./backend
+    image: polikut-backend
+    container_name: backend
+    env_file:
+      - ./backend/.env.prod
+    volumes:
+      - ./backend/firebase-admin.json:/app/firebase-admin.json:ro
+    depends_on:
+      - postgres
+
+  postgres:
+    restart: unless-stopped
+    image: postgres:18.6-alpine
+    container_name: postgres
+    env_file:
+      - ./backend/.env.prod
+    volumes:
+      - polikut-postgres:/var/lib/postgresql
+
+volumes:
+  polikut-postgres:

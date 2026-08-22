@@ -3,10 +3,9 @@ WORKDIR /build
 
 COPY gradlew build.gradle settings.gradle ./
 COPY gradle gradle
-RUN ./gradlew dependencies
-
 COPY src src
-RUN ./gradlew bootJar
+RUN --mount=type=cache,target=/root/.gradle \
+    ./gradlew bootJar
 
 FROM eclipse-temurin:25-jre-resolute
 WORKDIR /app

@@ -13,8 +13,8 @@ export default function ContactPhoneWithIcon({ sx, ...props }: BoxProps) {
         ...sx,
       }}
     >
-      <Box component="img" src="/lifecell.svg" sx={{ width: 22 }} />
-      <Typography sx={{ whiteSpace: "nowrap" }}>098 089-03-80</Typography>
+      <Box component="img" src="/kyivstar.svg" sx={{ width: 22 }} />
+      <Typography sx={{ whiteSpace: "nowrap" }}>067 565-12-16</Typography>
     </Box>
   );
 }

@@ -64,8 +64,8 @@ export default function Footer() {
               </Typography>
               <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
                 <PhoneIcon />
-                <LinkMUI href="tel:+380980890380" sx={linkStyles}>
-                  098 089-03-80
+                <LinkMUI href="tel:+380675651216" sx={linkStyles}>
+                  067 565-12-16
                 </LinkMUI>
               </Box>
               <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>

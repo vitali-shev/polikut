@@ -21,6 +21,11 @@ spring:
       password: "{noop}${ADMIN_PASSWORD}"
       roles: ADMIN
 
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 50MB
+
   cloud:
     gcp:
       credentials:

@@ -6,7 +6,7 @@ import com.polikut.feature.order.dto.response.OrderDetailsResponse;
 import com.polikut.feature.order.dto.response.OrderItemResponse;
 import com.polikut.feature.order.entity.DeliveryDetails;
 import com.polikut.feature.order.entity.Order;
-import com.polikut.infrastructure.integration.firebase.FirebaseStorageService;
+import com.polikut.external.firebase.FirebaseStorageService;
 import org.springframework.stereotype.Component;
 
 @Component

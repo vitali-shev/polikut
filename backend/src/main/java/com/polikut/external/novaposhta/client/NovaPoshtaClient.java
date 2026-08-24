@@ -1,9 +1,9 @@
-package com.polikut.infrastructure.integration.novaposhta.client;
+package com.polikut.external.novaposhta.client;
 
-import com.polikut.infrastructure.integration.novaposhta.dto.nova_poshta_request.NovaPoshtaRequest;
-import com.polikut.infrastructure.integration.novaposhta.dto.nova_poshta_response.NovaPoshtaResponse;
-import com.polikut.infrastructure.integration.novaposhta.dto.nova_poshta_response.SettlementResponse;
-import com.polikut.infrastructure.integration.novaposhta.dto.nova_poshta_response.WarehouseResponse;
+import com.polikut.external.novaposhta.dto.nova_poshta_request.NovaPoshtaRequest;
+import com.polikut.external.novaposhta.dto.nova_poshta_response.NovaPoshtaResponse;
+import com.polikut.external.novaposhta.dto.nova_poshta_response.SettlementResponse;
+import com.polikut.external.novaposhta.dto.nova_poshta_response.WarehouseResponse;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;

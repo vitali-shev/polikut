@@ -1,4 +1,4 @@
-package com.polikut.infrastructure.image;
+package com.polikut.feature.product.service;
 
 import net.coobird.thumbnailator.Thumbnails;
 import net.coobird.thumbnailator.geometry.Positions;

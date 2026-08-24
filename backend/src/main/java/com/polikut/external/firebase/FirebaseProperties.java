@@ -1,4 +1,4 @@
-package com.polikut.infrastructure.integration.firebase;
+package com.polikut.external.firebase;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

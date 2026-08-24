@@ -2,7 +2,7 @@ package com.polikut.feature.product.mapper;
 
 import com.polikut.feature.product.dto.response.ProductImageResponse;
 import com.polikut.feature.product.entity.ProductImage;
-import com.polikut.infrastructure.integration.firebase.FirebaseStorageService;
+import com.polikut.external.firebase.FirebaseStorageService;
 import org.springframework.stereotype.Component;
 
 @Component

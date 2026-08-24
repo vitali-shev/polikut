@@ -1,4 +1,4 @@
-package com.polikut.infrastructure.integration.novaposhta.dto.nova_poshta_response;
+package com.polikut.external.novaposhta.dto.nova_poshta_response;
 
 import java.util.List;
 

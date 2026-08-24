@@ -1,7 +1,7 @@
 package com.polikut.feature.delivery.mapper;
 
 import com.polikut.feature.delivery.dto.SettlementDto;
-import com.polikut.infrastructure.integration.novaposhta.dto.nova_poshta_response.SettlementResponse;
+import com.polikut.external.novaposhta.dto.nova_poshta_response.SettlementResponse;
 import com.polikut.feature.delivery.entity.Settlement;
 
 public class SettlementMapper {

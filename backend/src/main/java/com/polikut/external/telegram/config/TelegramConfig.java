@@ -1,4 +1,4 @@
-package com.polikut.infrastructure.integration.telegram.config;
+package com.polikut.external.telegram.config;
 
 import com.pengrad.telegrambot.TelegramBot;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,4 +1,4 @@
-package com.polikut.infrastructure.integration.firebase;
+package com.polikut.external.firebase;
 
 import com.google.cloud.storage.BlobId;
 import com.google.cloud.storage.BlobInfo;

@@ -1,7 +1,7 @@
 package com.polikut.feature.delivery.mapper;
 
 import com.polikut.feature.delivery.dto.WarehouseDto;
-import com.polikut.infrastructure.integration.novaposhta.dto.nova_poshta_response.WarehouseResponse;
+import com.polikut.external.novaposhta.dto.nova_poshta_response.WarehouseResponse;
 import com.polikut.feature.delivery.entity.Warehouse;
 
 public class WarehouseMapper {

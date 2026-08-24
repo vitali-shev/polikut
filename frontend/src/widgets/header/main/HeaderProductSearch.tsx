@@ -12,6 +12,7 @@ import { SxProps, Theme } from "@mui/material/styles";
 export default function HeaderProductSearch({ sx }: { sx?: SxProps<Theme> }) {
   const { data: options = [] } = useGetProductOptionsQuery();
   const [option, setOption] = useState<ProductOption | null>(null);
+  
   return (
     <AppAutocomplete
       sx={sx}

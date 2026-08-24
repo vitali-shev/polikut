@@ -15,7 +15,7 @@ import com.polikut.feature.order.repository.OrderRepository;
 import com.polikut.feature.product.entity.Product;
 import com.polikut.feature.product.exception.ProductNotFoundException;
 import com.polikut.feature.product.repository.ProductRepository;
-import com.polikut.infrastructure.integration.telegram.service.TelegramNotificationService;
+import com.polikut.external.telegram.service.TelegramNotificationService;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 

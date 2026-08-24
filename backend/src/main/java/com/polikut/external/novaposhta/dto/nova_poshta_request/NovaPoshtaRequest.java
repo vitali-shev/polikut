@@ -1,4 +1,4 @@
-package com.polikut.infrastructure.integration.novaposhta.dto.nova_poshta_request;
+package com.polikut.external.novaposhta.dto.nova_poshta_request;
 
 public record NovaPoshtaRequest<T>(
         String apiKey,

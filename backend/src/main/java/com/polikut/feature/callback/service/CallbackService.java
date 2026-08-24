@@ -1,7 +1,7 @@
 package com.polikut.feature.callback.service;
 
 import com.polikut.feature.callback.dto.CallbackRequest;
-import com.polikut.infrastructure.integration.telegram.service.TelegramNotificationService;
+import com.polikut.external.telegram.service.TelegramNotificationService;
 import org.springframework.stereotype.Service;
 
 @Service

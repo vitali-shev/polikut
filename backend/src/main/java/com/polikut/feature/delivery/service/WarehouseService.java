@@ -4,7 +4,7 @@ import com.polikut.feature.delivery.dto.WarehouseDto;
 import com.polikut.feature.delivery.entity.Warehouse;
 import com.polikut.feature.delivery.mapper.WarehouseMapper;
 import com.polikut.feature.delivery.repository.WarehouseRepository;
-import com.polikut.infrastructure.integration.novaposhta.client.NovaPoshtaClient;
+import com.polikut.external.novaposhta.client.NovaPoshtaClient;
 import jakarta.transaction.Transactional;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -23,7 +23,7 @@ public class WarehouseService {
     }
 
     @Transactional
-    @Scheduled(cron = "0 52 22 * * SAT")
+    @Scheduled(cron = "0 50 03 25 * *")
     public void syncWarehouses() throws InterruptedException {
             int page = 1;
             warehouseRepository.deleteAllInBatch();
@@ -41,7 +41,7 @@ public class WarehouseService {
                 page++;
                 Thread.sleep(1000);
             }
-        System.out.println("Всього сторінок завантажено: " + page);
+        System.out.println("Total pages loaded: " + page);
     }
 
     public List<WarehouseDto> search(String settlementRef) {

@@ -1,10 +1,9 @@
-package com.polikut.infrastructure.integration.telegram.service;
+package com.polikut.external.telegram.service;
 
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.SendMessage;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Indexed;
 import org.springframework.stereotype.Service;
 
 @Service
